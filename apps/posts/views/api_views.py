@@ -1,6 +1,7 @@
 from rest_framework import generics
 from ..serializers import PostSerializer
 from ..services.post_service import PostService
+from rest_framework.exceptions import NotFound
 
 
 class PostListCreateAPIView(generics.ListCreateAPIView):
